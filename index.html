@@ -5,157 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IESV Student Start Page</title>
 
-    <!-- Google Font: Open Sans -->
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <style>
-        /* GLOBAL RESET ---------------------------- */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: "Open Sans", sans-serif;
-            background: #bce4fa; /* Light Blue */
-            color: #102d69;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        /* HEADER ---------------------------- */
-        header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: #102d69; /* Navy */
-            color: white;
-            padding: 14px 24px;
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            z-index: 1000;
-        }
-
-        header img {
-            height: 36px;
-        }
-
-        header .school-name {
-            font-size: 18px;
-            font-weight: 600;
-        }
-
-        /* PAGE WRAPPER ---------------------------- */
-        .content {
-            padding: 120px 24px 50px; 
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        /* SEARCH BAR ---------------------------- */
-        .search-container {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 40px;
-        }
-
-        .search-box {
-            width: 100%;
-            max-width: 600px;
-            background: white;
-            padding: 14px 18px;
-            border-radius: 6px;
-            font-size: 16px;
-            border: none;
-        }
-
-        /* GRID ---------------------------- */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        @media (max-width: 900px) {
-            .grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 600px) {
-            .grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* CARD ---------------------------- */
-        .card {
-            background: white;
-            border-radius: 6px;
-            padding: 24px;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            cursor: pointer;
-            transition: 0.2s;
-        }
-
-        .card:hover {
-            background: #f5faff;
-        }
-
-        .accent {
-            height: 6px;
-            background: #00a0df; /* IES Logo Blue */
-            border-radius: 6px 6px 0 0;
-            margin: -24px -24px 0 -24px;
-        }
-
-        .icon-placeholder {
-            width: 38px;
-            height: 38px;
-            border: 2px solid #102d69;
-            border-radius: 6px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-            color: #102d69;
-        }
-
-        .card-title {
-            font-weight: 600;
-            font-size: 18px;
-        }
-
-        /* FOOTER ---------------------------- */
-        footer {
-            margin-top: 60px;
-            padding: 20px;
-            background: white;
-            color: #9a9b9d;
-            text-align: center;
-            font-size: 14px;
-        }
-
-    </style>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
     <!-- HEADER -->
     <header>
-        <img src="logo-placeholder.png" alt="IES Logo">
+        <img src="assets/images/logo.png" alt="IES Logo" class="site-logo">
         <div class="school-name">Internationella Engelska Skolan Västerås</div>
     </header>
 
     <!-- MAIN CONTENT -->
-    <div class="content">
+    <main class="content">
 
         <!-- SEARCH -->
         <div class="search-container">
@@ -165,7 +31,7 @@
         <!-- MAIN GRID -->
         <div class="grid">
 
-            <!-- ESSENTIALS -->
+            <!-- ESSENTIAL CARDS -->
             <a href="#schoolsoft" class="card">
                 <div class="accent"></div>
                 <div class="icon-placeholder">SS</div>
@@ -214,7 +80,7 @@
                 <div class="card-title">House Points</div>
             </a>
 
-            <!-- SUPPORT -->
+            <!-- SUPPORT CARDS -->
             <a href="#nurse" class="card">
                 <div class="accent"></div>
                 <div class="icon-placeholder">NU</div>
@@ -271,12 +137,15 @@
             </a>
 
         </div>
-    </div>
+    </main>
 
     <!-- FOOTER -->
     <footer>
         © IESV — Student Landing Page (V1.0)
     </footer>
+
+    <!-- JS FILE -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 </html>
