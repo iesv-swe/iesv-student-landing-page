@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IESV Student Start Page</title>
+
+    <!-- Google Font: Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* GLOBAL RESET ---------------------------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Open Sans", sans-serif;
+            background: #bce4fa; /* Light Blue */
+            color: #102d69;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* HEADER ---------------------------- */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #102d69; /* Navy */
+            color: white;
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            z-index: 1000;
+        }
+
+        header img {
+            height: 36px;
+        }
+
+        header .school-name {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        /* PAGE WRAPPER ---------------------------- */
+        .content {
+            padding: 120px 24px 50px; 
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* SEARCH BAR ---------------------------- */
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .search-box {
+            width: 100%;
+            max-width: 600px;
+            background: white;
+            padding: 14px 18px;
+            border-radius: 6px;
+            font-size: 16px;
+            border: none;
+        }
+
+        /* GRID ---------------------------- */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        @media (max-width: 900px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* CARD ---------------------------- */
+        .card {
+            background: white;
+            border-radius: 6px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            background: #f5faff;
+        }
+
+        .accent {
+            height: 6px;
+            background: #00a0df; /* IES Logo Blue */
+            border-radius: 6px 6px 0 0;
+            margin: -24px -24px 0 -24px;
+        }
+
+        .icon-placeholder {
+            width: 38px;
+            height: 38px;
+            border: 2px solid #102d69;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: #102d69;
+        }
+
+        .card-title {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        /* FOOTER ---------------------------- */
+        footer {
+            margin-top: 60px;
+            padding: 20px;
+            background: white;
+            color: #9a9b9d;
+            text-align: center;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <img src="logo-placeholder.png" alt="IES Logo">
+        <div class="school-name">Internationella Engelska Skolan Västerås</div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="content">
+
+        <!-- SEARCH -->
+        <div class="search-container">
+            <input class="search-box" type="text" placeholder="Search tools...">
+        </div>
+
+        <!-- MAIN GRID -->
+        <div class="grid">
+
+            <!-- ESSENTIALS -->
+            <a href="#schoolsoft" class="card">
+                <div class="accent"></div>
+                <div class="icon-placeholder">SS</div>
+                <div class="card-title">SchoolSoft</div>
+            </a>
+
+            <a href="https://classroom.google.com" class="card">
+                <div class="accent"></div>
+                <div class="icon-placeholder">GC</div>
+                <div class="card-title">Google Classroom</div>
+            </a>
+
+            <a href="https://mail.google.com" class="card">
+                <div class="accent"></div>
+                <div class="icon-placeholder">GM</div>
+                <div class="card-title">Email (Gmail)</div>
+            </a>
+
+            <a href="https://drive.google.com" class="card">
+                <div class="accent"></div>
+                <div class="icon-placeholder">GD</div>
+                <div class="card-title">Google Drive</div>
+            </a>
+
+            <a href="#timetable" class="card">
+                <div class="accent"></div>
+                <div class="icon-placeholder">TT</div>
+                <div class="card-title">Calendar / Timetable</div>
+            </a>
+
+            <a href="#library" class="card">
+                <div class="accent"></div>
+                <div class="icon-placeholder">LB</div>
+                <div class="card-title">Library System</div>
+            </a>
+
+            <a href="#lunch" class="card">
+                <div class="accent"></div>
+                <div class="icon-placeholder">LN</div>
+                <div class="card-title">Lunch Menu</div>
+            </a>
+
+            <a href="#housepoints" class="card">
+                <div class="accent"></div>
+                <div class="icon-placeholder">HP</div>
+                <div class="card-title">House Points</div>
+            </a>
+
+            <!-- SUPPORT -->
+            <a href="#nurse" class="card">
+                <div class="accent"></div>
+                <div class="icon-placeholder">NU</div>
+                <div class="card-title">Nurse & Counsellor</div>
+            </a>
+
+            <a href="#ithelp" class="card">
+                <div class="accent"></div>
+                <div class="icon-placeholder">IT</div>
+                <div class="card-title">IT Helpdesk</div>
+            </a>
+
+            <a href="#antibullying" class="card">
+                <div class="accent"></div>
+                <div class="icon-placeholder">AB</div>
+                <div class="card-title">Report Concern</div>
+            </a>
+
+            <a href="#handbook" class="card">
+                <div class="accent"></div>
+                <div class="icon-placeholder">HB</div>
+                <div class="card-title">Student Handbook</div>
+            </a>
+
+            <a href="#clubs" class="card">
+                <div class="accent"></div>
+                <div class="icon-placeholder">CL</div>
+                <div class="card-title">Clubs & Activities</div>
+            </a>
+
+            <!-- OPTIONAL MODULES -->
+            <a href="#iesv" class="card">
+                <div class="accent"></div>
+                <div class="icon-placeholder">WV</div>
+                <div class="card-title">School Website</div>
+            </a>
+
+            <a href="#transport" class="card">
+                <div class="accent"></div>
+                <div class="icon-placeholder">BS</div>
+                <div class="card-title">Transport Info</div>
+            </a>
+
+            <a href="#events" class="card">
+                <div class="accent"></div>
+                <div class="icon-placeholder">EV</div>
+                <div class="card-title">School Events</div>
+            </a>
+
+            <a href="#ebooks" class="card">
+                <div class="accent"></div>
+                <div class="icon-placeholder">EB</div>
+                <div class="card-title">Digital Textbooks</div>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        © IESV — Student Landing Page (V1.0)
+    </footer>
+
+</body>
+</html>
