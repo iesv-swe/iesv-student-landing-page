@@ -7,7 +7,7 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    background: #bce4fa;
+    background: #ffffff; /* overall base stays white now */
     color: #102d69;
 }
 
@@ -39,20 +39,22 @@ header {
     font-weight: 600;
 }
 
-/* CONTENT WRAPPER */
-.content {
-    padding: 120px 24px 50px;
+/* HERO AREA (white section with search bar) */
+.hero {
+    background: #ffffff;
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+.hero-inner {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: center;
 }
 
 /* SEARCH BAR */
-.search-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-}
-
 .search-box {
     width: 100%;
     max-width: 600px;
@@ -60,7 +62,18 @@ header {
     padding: 14px 18px;
     border-radius: 6px;
     font-size: 16px;
-    border: none;
+    border: 2px solid #d0d0d0;
+}
+
+/* GRID AREA (light blue section) */
+.grid-area {
+    background: #bce4fa;
+    padding: 40px 24px 60px;
+}
+
+.grid-area .grid {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* GRID */
@@ -94,6 +107,7 @@ header {
     background: #f5faff;
 }
 
+/* Accent bar */
 .accent {
     height: 6px;
     background: #00a0df;
@@ -101,7 +115,7 @@ header {
     margin: -24px -24px 0 -24px;
 }
 
-/* ICONS */
+/* ICON WRAP */
 .card-icon-wrap {
     width: 40px;
     height: 40px;
@@ -122,7 +136,7 @@ header {
     color: #102d69;
 }
 
-/* CARD TEXT */
+/* CARD TITLE */
 .card-title {
     font-weight: 600;
     font-size: 18px;
@@ -130,7 +144,6 @@ header {
 
 /* FOOTER */
 footer {
-    margin-top: 60px;
     padding: 20px;
     background: white;
     color: #9a9b9d;
