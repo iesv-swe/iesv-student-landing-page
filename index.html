@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IESV Student Start Page</title>
 
-    <!-- Google Font -->
+    <!-- Google Font: Open Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Font: Material Symbols (Outlined) -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300;400;600&display=swap" />
 
     <!-- External CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -32,107 +36,141 @@
         <div class="grid">
 
             <!-- ESSENTIAL CARDS -->
-            <a href="#schoolsoft" class="card">
+            <a href="#schoolsoft" class="card" data-keywords="schoolsoft attendance grades portal">
                 <div class="accent"></div>
-                <div class="icon-placeholder">SS</div>
+                <div class="card-icon-wrap">
+                    <span class="material-symbols-outlined card-icon">assignment</span>
+                </div>
                 <div class="card-title">SchoolSoft</div>
             </a>
 
-            <a href="https://classroom.google.com" class="card">
+            <a href="https://classroom.google.com" class="card" data-keywords="classroom google classwork assignments">
                 <div class="accent"></div>
-                <div class="icon-placeholder">GC</div>
+                <div class="card-icon-wrap">
+                    <span class="material-symbols-outlined card-icon">class</span>
+                </div>
                 <div class="card-title">Google Classroom</div>
             </a>
 
-            <a href="https://mail.google.com" class="card">
+            <a href="https://mail.google.com" class="card" data-keywords="gmail email mail">
                 <div class="accent"></div>
-                <div class="icon-placeholder">GM</div>
+                <div class="card-icon-wrap">
+                    <span class="material-symbols-outlined card-icon">mail</span>
+                </div>
                 <div class="card-title">Email (Gmail)</div>
             </a>
 
-            <a href="https://drive.google.com" class="card">
+            <a href="https://drive.google.com" class="card" data-keywords="drive files documents storage">
                 <div class="accent"></div>
-                <div class="icon-placeholder">GD</div>
+                <div class="card-icon-wrap">
+                    <span class="material-symbols-outlined card-icon">cloud</span>
+                </div>
                 <div class="card-title">Google Drive</div>
             </a>
 
-            <a href="#timetable" class="card">
+            <a href="#timetable" class="card" data-keywords="timetable calendar schedule lessons">
                 <div class="accent"></div>
-                <div class="icon-placeholder">TT</div>
+                <div class="card-icon-wrap">
+                    <span class="material-symbols-outlined card-icon">calendar_today</span>
+                </div>
                 <div class="card-title">Calendar / Timetable</div>
             </a>
 
-            <a href="#library" class="card">
+            <a href="#library" class="card" data-keywords="library books reading">
                 <div class="accent"></div>
-                <div class="icon-placeholder">LB</div>
+                <div class="card-icon-wrap">
+                    <span class="material-symbols-outlined card-icon">menu_book</span>
+                </div>
                 <div class="card-title">Library System</div>
             </a>
 
-            <a href="#lunch" class="card">
+            <a href="#lunch" class="card" data-keywords="lunch food canteen menu">
                 <div class="accent"></div>
-                <div class="icon-placeholder">LN</div>
+                <div class="card-icon-wrap">
+                    <span class="material-symbols-outlined card-icon">restaurant_menu</span>
+                </div>
                 <div class="card-title">Lunch Menu</div>
             </a>
 
-            <a href="#housepoints" class="card">
+            <a href="#housepoints" class="card" data-keywords="house points rewards competition">
                 <div class="accent"></div>
-                <div class="icon-placeholder">HP</div>
+                <div class="card-icon-wrap">
+                    <span class="material-symbols-outlined card-icon">workspace_premium</span>
+                </div>
                 <div class="card-title">House Points</div>
             </a>
 
             <!-- SUPPORT CARDS -->
-            <a href="#nurse" class="card">
+            <a href="#nurse" class="card" data-keywords="nurse counsellor health wellbeing support">
                 <div class="accent"></div>
-                <div class="icon-placeholder">NU</div>
-                <div class="card-title">Nurse & Counsellor</div>
+                <div class="card-icon-wrap">
+                    <span class="material-symbols-outlined card-icon">health_and_safety</span>
+                </div>
+                <div class="card-title">Nurse &amp; Counsellor</div>
             </a>
 
-            <a href="#ithelp" class="card">
+            <a href="#ithelp" class="card" data-keywords="it helpdesk support tech chromebook">
                 <div class="accent"></div>
-                <div class="icon-placeholder">IT</div>
+                <div class="card-icon-wrap">
+                    <span class="material-symbols-outlined card-icon">support_agent</span>
+                </div>
                 <div class="card-title">IT Helpdesk</div>
             </a>
 
-            <a href="#antibullying" class="card">
+            <a href="#antibullying" class="card" data-keywords="report concern antibullying safety">
                 <div class="accent"></div>
-                <div class="icon-placeholder">AB</div>
+                <div class="card-icon-wrap">
+                    <span class="material-symbols-outlined card-icon">report</span>
+                </div>
                 <div class="card-title">Report Concern</div>
             </a>
 
-            <a href="#handbook" class="card">
+            <a href="#handbook" class="card" data-keywords="student handbook rules expectations policies">
                 <div class="accent"></div>
-                <div class="icon-placeholder">HB</div>
+                <div class="card-icon-wrap">
+                    <span class="material-symbols-outlined card-icon">description</span>
+                </div>
                 <div class="card-title">Student Handbook</div>
             </a>
 
-            <a href="#clubs" class="card">
+            <a href="#clubs" class="card" data-keywords="clubs activities after school">
                 <div class="accent"></div>
-                <div class="icon-placeholder">CL</div>
-                <div class="card-title">Clubs & Activities</div>
+                <div class="card-icon-wrap">
+                    <span class="material-symbols-outlined card-icon">groups</span>
+                </div>
+                <div class="card-title">Clubs &amp; Activities</div>
             </a>
 
             <!-- OPTIONAL MODULES -->
-            <a href="#iesv" class="card">
+            <a href="#iesv" class="card" data-keywords="school website iesv home">
                 <div class="accent"></div>
-                <div class="icon-placeholder">WV</div>
+                <div class="card-icon-wrap">
+                    <span class="material-symbols-outlined card-icon">public</span>
+                </div>
                 <div class="card-title">School Website</div>
             </a>
 
-            <a href="#transport" class="card">
+            <a href="#transport" class="card" data-keywords="transport bus buses travel">
                 <div class="accent"></div>
-                <div class="icon-placeholder">BS</div>
+                <div class="card-icon-wrap">
+                    <span class="material-symbols-outlined card-icon">directions_bus</span>
+                </div>
                 <div class="card-title">Transport Info</div>
             </a>
 
-            <a href="#events" class="card">
+            <a href="#events" class="card" data-keywords="events calendar dates">
                 <div class="accent"></div>
-                <div class="icon-placeholder">EV</div>
+                <div class="card-icon-wrap">
+                    <span class="material-symbols-outlined card-icon">event</span>
+                </div>
                 <div class="card-title">School Events</div>
             </a>
 
-            <a href="#ebooks" class="card">
+            <a href="#ebooks" class="card" data-keywords="digital textbooks ebooks online books">
                 <div class="accent"></div>
-                <div class="icon-placeholder">EB</div>
+                <div class="card-icon-wrap">
+                    <span class="material-symbols-outlined card-icon">important_devices</span>
+                </div>
                 <div class="card-title">Digital Textbooks</div>
             </a>
 
