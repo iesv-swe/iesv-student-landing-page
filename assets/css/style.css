@@ -1,1 +1,130 @@
+/* GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: #bce4fa;
+    color: #102d69;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #102d69;
+    color: white;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    z-index: 1000;
+}
+
+.site-logo {
+    height: 36px;
+}
+
+.school-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* CONTENT WRAPPER */
+.content {
+    padding: 120px 24px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* SEARCH BAR */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.search-box {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 14px 18px;
+    border-radius: 6px;
+    font-size: 16px;
+    border: none;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 900px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+    .grid { grid-template-columns: 1fr; }
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 6px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card:hover {
+    background: #f5faff;
+}
+
+.accent {
+    height: 6px;
+    background: #00a0df;
+    border-radius: 6px 6px 0 0;
+    margin: -24px -24px 0 -24px;
+}
+
+.icon-placeholder {
+    width: 38px;
+    height: 38px;
+    border: 2px solid #102d69;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #102d69;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 60px;
+    padding: 20px;
+    background: white;
+    color: #9a9b9d;
+    text-align: center;
+    font-size: 14px;
+}
 
